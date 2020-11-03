@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* margin: 10px; */
+  background-color: #f5f3f3bb;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+h3,
+h4,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+.app_heading {
+  position: fixed;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+.app_heading > h1 {
+  color: #848484;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 15px;
+}
+.app_pcmc_info {
+  padding-top: 60px;
+}
+.app_pcmc_info > p {
+  font-weight: 400;
+  color: #8c8c8c;
+  margin: 10px;
+}
+.app_pcmc_info > p > span {
+  font-weight: 900;
+  color: #848484;
+}
+.app_body {
+  margin: 0 15px;
+}
+.main_div {
+  /* display: flex;
+  flex-direction: column; */
+  color: white;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-align: center;
+}
+.main_div > h3 {
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.main_div > p {
+  text-align: center;
+}
+.card_title {
+  background-color: #e8e9ef;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 200;
+}
+.card {
+  border: 1px solid lightgray;
+  margin: 20px 0;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.table_head {
+  background-color: #e8e9ef;
+  font-size: 12px;
+}
+.table_item_count {
+  background-color: #dc3545;
+  padding: 5px;
+  border-radius: 5px;
+  width: min-content;
+  color: white;
+  font-weight: 600;
+  text-align: end;
+}
+.pcmc_graph {
+  /* width: 90%;
+  margin: 0 auto; */
+}
+.card-body {
+  margin: 0;
+  padding: 0;
+}
