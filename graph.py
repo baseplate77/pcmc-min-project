@@ -104,12 +104,12 @@ pcmc.update_layout(hovermode="x unified",
 pcmc_pos_rec = go.Figure()
 pcmc_pos_rec.add_trace(go.Scatter(x=pcmc_data["date"], y=pcmc_data["DAY WISE POSITIVE COVID CASES"], fill='tozeroy', mode="lines+markers", name="DAY WISE POSITIVE COVID CASES",
                                   marker=dict(
-    color="#FF859F",
+    color="#d7385e",
     opacity=0.5,)))  # fill down to xaxis
 
 pcmc_pos_rec.add_trace(go.Scatter(x=pcmc_data["date"], y=pcmc_data["DAY WISE RECOVERED COVID CASES"], fill='tozeroy', mode="lines+markers", name="DAY WISE RECOVERED COVID CASES",
                                   marker=dict(
-    color="#39CFAA",
+    color="#f6830f",
     opacity=0.5,)))
 pcmc_pos_rec.update_traces(marker=dict(size=0,
                                        line=dict(width=0)))

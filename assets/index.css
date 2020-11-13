@@ -4,7 +4,60 @@
 }
 body {
   /* margin: 10px; */
-  background-image: url("./covid1.jpg");
+  background: radial-gradient(
+        1.5em 6.28571em at 1.95em,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0.25) 55%,
+        rgba(255, 255, 255, 0) 55%
+      )
+      0 0,
+    radial-gradient(
+        1.5em 6.28571em at -0.45em,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0.25) 55%,
+        rgba(255, 255, 255, 0) 55%
+      )
+      1.5em 5.5em,
+    radial-gradient(
+        2.3em 4.57143em at 2.99em,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.3) 55%,
+        rgba(255, 255, 255, 0) 55%
+      )
+      0 0,
+    radial-gradient(
+        2.3em 4.57143em at -0.69em,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.3) 55%,
+        rgba(255, 255, 255, 0) 55%
+      )
+      2.3em 4em,
+    radial-gradient(
+        3.5em 6.28571em at 4.55em,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0.25) 55%,
+        rgba(255, 255, 255, 0) 55%
+      )
+      0 0,
+    radial-gradient(
+        3.5em 6.28571em at -1.05em,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0.25) 55%,
+        rgba(255, 255, 255, 0) 55%
+      )
+      3.5em 5.5em,
+    radial-gradient(#cff1e4, #b0f5f6);
+  background-color: #cff1e4;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em,
+    3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+  /* background-image: url("./pop.jpg"); */
   background-color: #f5f3f3bb;
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -19,18 +72,21 @@ p {
 }
 .app_heading {
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 5;
-  background-color: white;
+  /* background-color: white; */
   width: 100%;
   height: 50px;
   padding: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.15); */
 }
 .app_heading > h1 {
-  color: #848484;
+  color: #ffd700;
+  text-align: center;
+
   font-weight: 700;
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 15px;
 }
 .app_pcmc_info {
@@ -68,29 +124,59 @@ p {
   text-align: center;
 }
 .card_title {
-  background-color: #e8e9ef;
+  background-color: #16a596;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
-  font-weight: 200;
+  color: white;
+  font-weight: bold;
 }
 .card {
   border: 1px solid lightgray;
   margin: 20px 0;
+
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
 }
 .table_head {
-  background-color: #e8e9ef;
-  font-size: 12px;
+  background-color: #ea2c62;
+  color: white;
+  /* text-align: center; */
+  font-weight: bold;
+  font-size: 16px;
+}
+.s_head {
+  background-color: #5c6bc0;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
 }
 .table_item_count {
   background-color: #dc3545;
   padding: 5px;
-  border-radius: 5px;
-  width: min-content;
+  border-radius: 10px;
+  width: 90px;
   color: white;
+  font-weight: blod;
+  text-align: center;
+}
+.table2_item_count {
+  background-color: #28a745;
+  padding: 5px;
+  border-radius: 10px;
+  width: 90px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.s_row {
+  padding: 3px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  width: min-content;
+  /* *** change symptome color *** */
+  color: black;
   font-weight: 600;
-  text-align: end;
 }
 .pcmc_graph {
   /* width: 90%;
