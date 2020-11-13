@@ -4,10 +4,12 @@
 }
 body {
   /* margin: 10px; */
+  background-image: url("./covid1.jpg");
   background-color: #f5f3f3bb;
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 }
+
 h3,
 h4,
 li,

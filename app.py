@@ -32,7 +32,7 @@ external_stylesheets = [dbc.themes.BOOTSTRAP]
 
 # app
 app = dash.Dash(
-    __name__, external_stylesheets=external_stylesheets)
+    __name__, external_stylesheets=external_stylesheets,)
 # app layout
 app.layout = html.Div([
     html.Div(html.H1("PCMC COVID-19 Tracker"), className="app_heading"),
@@ -56,7 +56,7 @@ app.layout = html.Div([
                                  className="main_div", style={"backgroundColor": "#95AFC0"})),
             ]),
         ], className="app_pcmc_info"),
-
+        # pie chart
 
         dbc.Row([
             dbc.Col(dbc.Card([
@@ -78,10 +78,10 @@ app.layout = html.Div([
             )
         ]),
         # table
-        # dbc.Col(dbc.Card([
-        #     dbc.Table(table_header + table_body, bordered=False)
+        dbc.Col(dbc.Card([
+            dbc.Table(table_header + table_body, bordered=False)
 
-        # ], className="card"), width=4),
+        ], className="card"), width=4),
 
         dbc.Row([
             dbc.Col(dbc.Card([
@@ -103,13 +103,13 @@ app.layout = html.Div([
             )
         ]),
 
-        dbc.Card([
-            dbc.CardBody([
-                html.H4("COVID-19 PCMC Cases",
-                        className="card_title"),
-                dcc.Graph(id="pcmc_graph", figure=pcmc_graph),
-            ])
-        ], className="card pcmc_graph1"),
+        # dbc.Card([
+        #     dbc.CardBody([
+        #         html.H4("COVID-19 PCMC Cases",
+        #                 className="card_title"),
+        #         dcc.Graph(id="pcmc_graph", figure=pcmc_graph),
+        #     ])
+        # ], className="card pcmc_graph1"),
     ], className="app_body")
 
 
